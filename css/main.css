@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: 'Patua One', cursive;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -56,5 +58,13 @@ main {
   display: grid;
   grid-template-areas:
   "box1 box2" "box1 box2";
-  align-
+}
+
+figure{
+  margin: 0;
+  padding: 1rem;
+}
+
+h2 {
+  color: #30658d;
 }
