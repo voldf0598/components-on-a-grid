@@ -15,4 +15,46 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.logo {
+  width: 14rem;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  z-index: 1;
+}
+
+nav{
+  grid-column: 4 / -1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  align-content: center;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+  "box1 box2" "box1 box2";
+  align-
 }
